@@ -20,8 +20,13 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#why-me">Why Me</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -215,8 +220,14 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="fullstack web">
                     <div class="project-image">
                         <img src="images/project1.jpg" alt="Project 1" onerror="this.src='https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -234,7 +245,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="ai fullstack">
                     <div class="project-image">
                         <img src="images/project2.jpg" alt="Project 2" onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -252,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="web fullstack">
                     <div class="project-image">
                         <img src="images/project3.jpg" alt="Project 3" onerror="this.src='https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -270,7 +281,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="fullstack web">
                     <div class="project-image">
                         <img src="images/project4.jpg" alt="Project 4" onerror="this.src='https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -288,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="fullstack web">
                     <div class="project-image">
                         <img src="images/project5.jpg" alt="Project 5" onerror="this.src='https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -306,7 +317,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="images/project6.jpg" alt="Project 6" onerror="this.src='https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -324,7 +335,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="ai web">
                     <div class="project-image">
                         <img src="images/project7.jpg" alt="Project 7" onerror="this.src='https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -342,7 +353,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="web ai">
                     <div class="project-image">
                         <img src="images/project8.jpg" alt="Project 8" onerror="this.src='https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -360,7 +371,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="images/project9.jpg" alt="Project 9" onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=400&h=300&fit=crop'">
                         <div class="project-overlay">
@@ -377,6 +388,99 @@
                             <span>CV</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>MERN Stack Development</h3>
+                    <p>Completed comprehensive Full Stack Development internship at Axcentra</p>
+                    <span class="achievement-date">2026</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Successfully completed Web Developer internship at The Developers Arena</p>
+                    <span class="achievement-date">2025</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Project Portfolio</h3>
+                    <p>Built 10+ full-stack projects demonstrating diverse technical skills</p>
+                    <span class="achievement-date">2024-2026</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>AI/ML Projects</h3>
+                    <p>Developed multiple AI-powered applications including RAG tools and course generators</p>
+                    <span class="achievement-date">2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me Section -->
+    <section id="why-me" class="why-me">
+        <div class="container">
+            <h2 class="section-title">Why Work With Me</h2>
+            <p class="section-subtitle">What sets me apart as a developer</p>
+            <div class="why-me-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Learner</h3>
+                    <p>Rapidly adapt to new technologies and frameworks. Successfully completed two internships mastering MERN stack and modern web development practices in short timeframes.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Clean Code Advocate</h3>
+                    <p>Write maintainable, well-documented code following industry best practices. Strong understanding of Git workflows, code reviews, and collaborative development.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Full-Stack Capable</h3>
+                    <p>Hands-on experience with both frontend and backend technologies. Built 10+ full-stack projects demonstrating end-to-end development capabilities.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Problem Solver</h3>
+                    <p>Tackle complex challenges with analytical thinking. Experience with AI/ML projects, real-time systems, and data visualization demonstrates versatility.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Team Player</h3>
+                    <p>Thrive in collaborative Agile environments. Strong communication skills with experience in daily stand-ups, sprint planning, and team coordination.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth Mindset</h3>
+                    <p>Continuously learning and improving. Eager to take on new challenges, receive feedback, and grow as a professional developer.</p>
                 </div>
             </div>
         </div>
@@ -446,6 +550,11 @@
             <p>&copy; 2025 Yash. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
